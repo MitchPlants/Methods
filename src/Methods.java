@@ -14,8 +14,9 @@ public class Methods {
 
 
         int x = 10;
-        int y = 3;
+        int y = 5;
         System.out.print(multiply(x,y));
+        System.out.print(devide(x,y));
 
 
 
@@ -36,8 +37,11 @@ public class Methods {
 
         return answer;
 
+    }
+    public static int devide(int number1, int number2){
+        int answer = number1/number2;
 
-
+        return answer;
     }
 
 }
