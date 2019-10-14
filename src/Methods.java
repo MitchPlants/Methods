@@ -13,10 +13,11 @@ public class Methods {
         greeting("People");
 
 
-        int x = 10;
-        int y = 5;
-        System.out.print(multiply(x,y));
-        System.out.print(devide(x,y));
+        int x = 20;
+        int y = 10;
+        System.out.println(multiply(x,y));
+        System.out.println(devide(x,y));
+        System.out.println(max(x,y));
 
 
 
@@ -38,10 +39,19 @@ public class Methods {
         return answer;
 
     }
-    public static int devide(int number1, int number2){
-        int answer = number1/number2;
+    public static double devide(double number1, double number2){
+        double answer = number1/number2;
 
         return answer;
+    }
+    public static double max(double number1, double number2){
+        if(number1 > number2){
+            return number1;
+
+        }
+        else{
+            return number2;
+        }
     }
 
 }
