@@ -19,6 +19,13 @@ public class Methods {
         System.out.println(devide(x,y));
         System.out.println(max(x,y));
 
+        String Word1;
+        String Word2;
+        Word1 = "Cool";
+        Word2 = "Cat";
+        System.out.println(Word1+Word2);
+        change(Word1,Word2);
+
 
 
 
@@ -49,9 +56,22 @@ public class Methods {
             return number1;
 
         }
-        else{
+        else if(number1 < number2){
             return number2;
+
+        }
+        else {
+            return number1;
         }
     }
+    public static String change(String word1, String word2){
+        System.out.println(word2+word1);
+
+
+        return word2+word1;
+
+
+    }
+
 
 }
