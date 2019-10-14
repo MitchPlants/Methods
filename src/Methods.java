@@ -6,11 +6,11 @@ public class Methods {
         Scanner Keyboard;
         Keyboard = new Scanner(System.in);
         helloWorld();
-        System.out.println("Your Name?");
+        System.out.println("Name");
         Name = Keyboard.nextLine();
 
+
         greeting(Name);
-        greeting("People");
 
 
         int x = 20;
@@ -37,8 +37,9 @@ public class Methods {
         System.out.println("Hello World");
 
     }
-    public static void greeting(String noun){
-        System.out.println("Hello " +noun);
+    public static String greeting(String noun){
+        return "Hello"+noun;
+
     }
     public static int multiply(int number1, int number2){
         int answer = number1*number2;
